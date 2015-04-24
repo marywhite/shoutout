@@ -1,0 +1,22 @@
+body {
+	font-family: 'Inconsolata', sans-serif;
+	text-align: center;
+	overflow: scroll;
+}
+
+h1 {
+	color: #FF704D;
+	margin-bottom: 0em;
+}
+
+h1:hover {
+	color: #DDDDDD;
+}
+
+h2 {
+	font-size: 10em;
+}
+
+#container {
+	height: 20em;
+}
