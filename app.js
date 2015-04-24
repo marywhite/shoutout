@@ -1,15 +1,19 @@
 
+
 $(document).ready(function(){
+	// var feedback = $.get("feedback.csv");
+	// console.log(feedback);
+	var i = 0;
 	$( window ).scroll(function() {
-		var newText = "<h2>shoutout</h2>"
-		$("#container").append(newText);
 
-
-		//$(newText).hide().appendTo("#container").fadeIn("slow");
-		//append("<h2>Some text </h2>").hide().fadeIn("slow");
+		//still figuring this out
+		
+    	if($(document).scrollTop() > 200) {
+        	var newText = "<h2 id =shoutout>shoutout</h2>"
+        	$(newText).appendTo("#container").delay("slow");
+			i++;
+			console.log(i);
+    	}
 	});	
 });
-
-
-
 
