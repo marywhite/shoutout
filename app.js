@@ -10,20 +10,12 @@ $(document).ready(function(){
 		}
 	});
 
-	console.log(yay);
-	var windowWidth = $(this).width();
-  	var windowHeight = $(this).height();
-  	var windowScrollTop = $(this).scrollTop();
 
-	$(window).scroll (function(){
-		console.log('hi')
+	$("#container").scroll (function(){
+		$("h1").css("color", "black")
+		$("h4").css("color", "#FF704D")
+		$("h2").css("color", "#FF704D")
+		$("p").delay(2000).fadeIn(10000);
 	});
-	
-
-
-	// $( window ).scroll(function() {
-
- //    	}
-	// });	
 });
 

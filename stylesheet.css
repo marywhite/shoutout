@@ -1,12 +1,13 @@
 body {
 	font-family: 'Inconsolata', sans-serif;
 	text-align: center;
-	overflow: scroll;
+	background-image: url("sky.jpg");
 }
 
 h1 {
 	color: #FF704D;
-	margin-bottom: 0em;
+	margin-bottom: 2em;
+	font-size: 3em;
 }
 
 h1:hover {
@@ -19,7 +20,9 @@ h2 {
 
 #container {
 	height: 20em;
+	width: 40%;
 	overflow: scroll;
+	margin: 0em auto;
 }
 
 .hidden {
