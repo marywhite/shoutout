@@ -1,19 +1,29 @@
 
 
 $(document).ready(function(){
-	// var feedback = $.get("feedback.csv");
-	// console.log(feedback);
-	var i = 0;
-	$( window ).scroll(function() {
+	
+	var yay = [];
+	$.get("feedback.csv", function(data){
+		var stuff = data.split('\n');
+		for (var i = 1; i < stuff.length; i++){
+			$("#container").append("<p class=hidden>" + stuff[i] + "</p>");
+		}
+	});
 
-		//still figuring this out
-		
-    	if($(document).scrollTop() > 200) {
-        	var newText = "<h2 id =shoutout>shoutout</h2>"
-        	$(newText).appendTo("#container").delay("slow");
-			i++;
-			console.log(i);
-    	}
-	});	
+	console.log(yay);
+	var windowWidth = $(this).width();
+  	var windowHeight = $(this).height();
+  	var windowScrollTop = $(this).scrollTop();
+
+	$(window).scroll (function(){
+		console.log('hi')
+	});
+	
+
+
+	// $( window ).scroll(function() {
+
+ //    	}
+	// });	
 });
 
